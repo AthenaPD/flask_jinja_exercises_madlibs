@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block title %}Story Form{% endblock %}
+{% block h1 %}Madlibs{% endblock %}
+{% block content %}
+    <p>{{template}}</p>
+    <form action="/read-story" id="story-form">
+        <label for="template">Template:</label>
+        <input type="text" id="template" name="template" value={{template_num}} readonly>
+        <br>
+        {% for prompt in prompts%}
+            <label for="{{prompt}}">{{prompt}}:</label>
+            <input type="text" id="{{prompt}}" name="{{prompt}}" minlength="3" required>
+            <br>
+        {% endfor %}
+        <button type="submit">Submit</button>
+    </form>
+{% endblock %}

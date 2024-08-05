@@ -1,0 +1,40 @@
+body {
+    margin: 20px;
+    text-align: center;
+    background-color: #bde8fa;
+}
+
+input, select {
+    margin: 10px;
+    padding: 5px;
+    font-size: 1rem;
+}
+
+button {
+    font-size: 1.25rem;
+    padding: 5px 5px 5px 5px;
+    margin: 10px;
+}
+
+label {
+    margin: 10px;
+    padding: 10px;
+    font-size: 1.5rem;
+}
+
+#story-form, #add-story-form {
+    display: inline-block;
+    text-align: right;
+}
+
+#story-form > button {
+    margin-right: 140px;
+}
+
+#add-story-form > input {
+    width: 500px;
+}
+
+p {
+    font-size: 1.5rem;
+}

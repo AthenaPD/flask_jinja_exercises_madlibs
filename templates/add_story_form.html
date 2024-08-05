@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block title %}Add A Story{% endblock %}
+{% block h1 %}Add A New Story{% endblock %}
+{% block content %}
+    <form action="/add-story" id="add-story-form" method="POST">
+        <label for="parts-of-speech">Parts of speech:</label>
+        <input type="text" id='parts-of-speech' name='parts-of-speech' placeholder="place, adjective, noun, etc">
+        <br>
+        <label for="story-text">Text of story:</label>
+        <input type="text" id="story-text" name="story-text" placeholder="I went to the {place} today and saw a(n) {adjective} {noun}.">
+        <br>
+        <button type="submit">Add story</button>
+    </form>
+{% endblock %}
